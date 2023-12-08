@@ -1,0 +1,316 @@
+body {
+    margin: 20px 0;
+    background: #90ff90;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.inicio-do-jogo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffeb99;
+    width: 350px;
+    height: 250px;
+    left: calc((100vw - 390px) / 2);
+    top: 350px;
+    box-shadow: 3px 3px 2px black;
+    border-radius: 15px;
+    z-index: 5;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+}
+
+#username {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.numero-de-jogadores {
+    margin: 0;
+}
+
+.jogadores {
+    padding: 5px;
+    font-size: 1rem;
+    width: 150px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    background: black;
+    color: #FFFFFF;
+    font-family: 'Fredoka One', cursive;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 5px;
+    color: black;
+}
+
+.label-estilo {
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.botoes-reiniciar-novojogo {
+    padding: 5px;
+}
+
+.reiniciar,
+.novojogo {
+    padding: 10px;
+    background: #cecece;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    margin: 0px 5px;
+    font-family: 'Fredoka One', cursive;
+    color: black;
+    width: 150px;
+}
+
+.jogo-memoria {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(6, 100px);
+    gap: 10px;
+    align-self: center;
+}
+
+.botao {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: #a0a0a0;
+    border-radius: 100px;
+    transition: 2s;
+    box-shadow: 2px 2px 1px #808080;
+}
+
+.imagem {
+    width: 60px;
+    padding: 20px;
+    opacity: 1;
+    transition-delay: 0.6s;
+}
+
+.um-player {
+    padding: 5px;
+    align-self: center;
+}
+
+.tentativas,
+.tempo {
+    background-color: #ffeb99;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 0px 10px;
+    box-shadow: 2px 2px 2px black;
+    font-family: 'Fredoka One', cursive;
+    color: black;
+}
+
+.players {
+    align-self: center;
+}
+
+.player {
+    background-color: #ffeb99;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 0px 10px;
+    box-shadow: 2px 2px 2px black;
+    font-family: 'Fredoka One', cursive;
+    color: black;
+}
+
+.vitoria,
+.empate {
+    padding: 10px;
+    background: #ffc800;
+    font-size: 1.5rem;
+    font-family: 'Fredoka One', cursive;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 350px;
+    box-shadow: 3px 3px 2px black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.oculto {
+    opacity: 0;
+}
+
+.vira {
+    transform: rotateY(180deg);
+}
+
+.vira img {
+    transform: rotateY(180deg);
+}
+
+.player-ativo {
+    background-color: #ffce00;
+}
+
+.imagem-ativa {
+    opacity: 1;
+}
+
+.botao-ativo {
+    background-color: #505050;
+}
+
+.inativo {
+    display: none;
+}
+
+#ranking {
+    height: auto;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    background-color: #ffeb99;
+}
+
+tr:nth-child(even) {
+    background-color: #ffeb99;
+}
+
+th {
+    background-color: #ffc800;
+    color: black;
+}
+
+@media screen and (max-width: 900px) {
+
+    .vitoria,
+    .empate {
+        width: 50%;
+        top: 550px;
+    }
+
+    body {
+        gap: 0px;
+    }
+
+    header {
+        display: grid;
+        justify-content: center;
+    }
+
+    .jogo-memoria {
+        transform: scale(0.9);
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(9, 100px);
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .botoes-reiniciar-novojogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .inicio-do-jogo {
+        transform: scale(0.9);
+        left: calc((100vw - 380px) / 2);
+        top: 400px;
+    }
+
+    .players {
+        transform: scale(0.9);
+        display: flex;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .vira {
+        transform: scale(0.9);
+        transform: rotateY(180deg);
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .vitoria,
+    .empate {
+        font-size: 1.2rem;
+        width: 50%;
+        top: 750px;
+    }
+
+    .jogo-memoria {
+        transform: scale(0.8);
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(12, 100px);
+    }
+
+    .botoes-reiniciar-novojogo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inicio-do-jogo {
+        transform: scale(0.65);
+        left: calc((100vw - 390px) / 2);
+    }
+}

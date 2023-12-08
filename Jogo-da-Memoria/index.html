@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="images/logo.png"/>
+        <title>Jogo da Memória</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Jogo da Memória</h1>
+            </div>
+            <div class="botoes-reiniciar-novojogo">
+                <button class="reiniciar">Reiniciar</button>
+                <button class="novojogo">Novo Jogo</button>
+            </div>
+        </header>
+        <div class="inicio-do-jogo">
+            <label for="username" class="label-estilo">Digite o seu nome</label>
+            <input type="text" id="username" name="username">
+            <h2>Escolha o modo de jogo</h2>
+            <div class="numero-de-jogadores">
+                <button class="jogadores 1">Single Player</button>
+                <button class="jogadores 2">Contra CPU</button>
+            </div>
+        </div>
+        <div class="jogo-memoria">
+            <div class="botao"><img src="./images/(1).png" class="imagem oculto" accesskey="1" alt="1"></div>
+            <div class="botao"><img src="./images/(1).png" class="imagem oculto" accesskey="1" alt="1"></div>
+            <div class="botao"><img src="./images/(2).png" class="imagem oculto" accesskey="2" alt="2"></div>
+            <div class="botao"><img src="./images/(2).png" class="imagem oculto" accesskey="2" alt="2"></div>
+            <div class="botao"><img src="./images/(3).png" class="imagem oculto" accesskey="3" alt="3"></div>
+            <div class="botao"><img src="./images/(3).png" class="imagem oculto" accesskey="3" alt="3"></div>
+            <div class="botao"><img src="./images/(4).png" class="imagem oculto" accesskey="4" alt="4"></div>
+            <div class="botao"><img src="./images/(4).png" class="imagem oculto" accesskey="4" alt="4"></div>
+            <div class="botao"><img src="./images/(5).png" class="imagem oculto" accesskey="5" alt="5"></div>
+            <div class="botao"><img src="./images/(5).png" class="imagem oculto" accesskey="5" alt="5"></div>
+            <div class="botao"><img src="./images/(6).png" class="imagem oculto" accesskey="6" alt="6"></div>
+            <div class="botao"><img src="./images/(6).png" class="imagem oculto" accesskey="6" alt="6"></div>
+            <div class="botao"><img src="./images/(7).png" class="imagem oculto" accesskey="7" alt="7"></div>
+            <div class="botao"><img src="./images/(7).png" class="imagem oculto" accesskey="7" alt="7"></div>
+            <div class="botao"><img src="./images/(8).png" class="imagem oculto" accesskey="8" alt="8"></div>
+            <div class="botao"><img src="./images/(8).png" class="imagem oculto" accesskey="8" alt="8"></div>
+            <div class="botao"><img src="./images/(9).png" class="imagem oculto" accesskey="9" alt="9"></div>
+            <div class="botao"><img src="./images/(9).png" class="imagem oculto" accesskey="9" alt="9"></div>
+            <div class="botao"><img src="./images/(10).png" class="imagem oculto" accesskey="10" alt="10"></div>
+            <div class="botao"><img src="./images/(10).png" class="imagem oculto" accesskey="10" alt="10"></div>
+            <div class="botao"><img src="./images/(11).png" class="imagem oculto" accesskey="11" alt="11"></div>
+            <div class="botao"><img src="./images/(11).png" class="imagem oculto" accesskey="11" alt="11"></div>
+            <div class="botao"><img src="./images/(12).png" class="imagem oculto" accesskey="12" alt="12"></div>
+            <div class="botao"><img src="./images/(12).png" class="imagem oculto" accesskey="12" alt="12"></div>
+            <div class="botao"><img src="./images/(13).png" class="imagem oculto" accesskey="13" alt="13"></div>
+            <div class="botao"><img src="./images/(13).png" class="imagem oculto" accesskey="13" alt="13"></div>
+            <div class="botao"><img src="./images/(14).png" class="imagem oculto" accesskey="14" alt="14"></div>
+            <div class="botao"><img src="./images/(14).png" class="imagem oculto" accesskey="14" alt="14"></div>
+            <div class="botao"><img src="./images/(15).png" class="imagem oculto" accesskey="15" alt="15"></div>
+            <div class="botao"><img src="./images/(15).png" class="imagem oculto" accesskey="15" alt="15"></div>
+            <div class="botao"><img src="./images/(16).png" class="imagem oculto" accesskey="16" alt="16"></div>
+            <div class="botao"><img src="./images/(16).png" class="imagem oculto" accesskey="16" alt="16"></div>
+            <div class="botao"><img src="./images/(17).png" class="imagem oculto" accesskey="17" alt="17"></div>
+            <div class="botao"><img src="./images/(17).png" class="imagem oculto" accesskey="17" alt="17"></div>
+            <div class="botao"><img src="./images/(18).png" class="imagem oculto" accesskey="18" alt="18"></div>
+            <div class="botao"><img src="./images/(18).png" class="imagem oculto" accesskey="18" alt="18"></div>
+        </div>
+        <div class="um-player inativo">
+            <button class="tentativas">Tentativas: 0</button>
+        </div>
+        <div class="players">
+            <button class="player player-ativo">
+                <h2>P1</h2>
+                <p>0</p>
+            </button>
+            <button class="player">
+                <h2>CPU</h2>
+                <p>0</p>
+            </button>
+        </div>
+        <div class="vitoria inativo"></div>
+        <div class="empate inativo"></div>
+        <div id="ranking"></div>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
