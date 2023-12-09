@@ -303,7 +303,7 @@ reiniciar.onclick = function () {
     }
 };
 
-// Função para embaralhar as botões e iniciar um novo jogo
+// Função para embaralhar os botões e iniciar um novo jogo
 novojogo.onclick = function embaralhar() {
     listaPontoDosJogadores = [0, 0];
     document.querySelectorAll('.player')[0].innerHTML = "<h2>P1</h2><p>0</p></button>";
@@ -347,7 +347,7 @@ novojogo.onclick = function embaralhar() {
     }
     document.querySelector('.inicio-do-jogo').classList.remove('inativo');
 
-    // Função para embaralhar as botões do jogo e atualizar as imagens dos botões de acordo com a nova ordem.
+    // Função para embaralhar os botões do jogo e atualizar as imagens dos botões de acordo com a nova ordem
     setTimeout(() => {
         for (let i = botoesDoJogo.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
