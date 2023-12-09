@@ -289,7 +289,6 @@ reiniciar.onclick = function () {
     document.querySelectorAll('.player')[0].classList.add('player-ativo');
     contadorMultiplayer = 0;
     contadorTentativas = 0;
-    contadorJogadasCPU = 0;
     document.querySelector('.tentativas').innerHTML = "Tentativas: 0";
     listaPontoDosJogadores = [0, 0];
 
@@ -325,7 +324,6 @@ novojogo.onclick = function embaralhar() {
     document.querySelectorAll('.player')[0].classList.add('player-ativo');
     contadorMultiplayer = 0;
     contadorTentativas = 0;
-    contadorJogadasCPU = 0;
     document.querySelector('.tentativas').innerHTML = "Tentativas: 0";
 
     for (let i = 0; i < botoesPrincipais.length; i++) {
